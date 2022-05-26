@@ -67,7 +67,6 @@ public class SanitySteps{
         merchandiseEntryAction.merchandiseEntry();
         merchandiseEntryAction.merchandiseEntryInventory();
         Thread.sleep(2000);
-        loginPageAction.leave();
     }
 
     //-----------<Segundo escenario>----------------

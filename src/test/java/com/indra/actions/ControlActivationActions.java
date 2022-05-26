@@ -42,6 +42,7 @@ public class ControlActivationActions extends ControlActivationPage {
     public void activationInformation(String msisdn,String imsi) throws InterruptedException {
         //enter("732111198172290").into(getImsi());
         //enter("3016875893").into(getMsisdn());
+        getAcceptRenew().waitUntilEnabled();
         getAcceptRenew().click();
         getAcceptRenew1().click();
         enter(imsi).into(getImsi());

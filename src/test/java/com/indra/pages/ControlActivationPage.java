@@ -50,10 +50,10 @@ public class ControlActivationPage extends PageObject{
     @FindBy(id = "ActivacionesForm:btnContinuar")
     WebElementFacade btnContinue;
 
-    @FindBy(xpath = "//select[contains(@id,'ActivacionesForm:decisionField')]")
+    @FindBy(xpath = "//*[@id='ActivacionesForm:decisionField']")
     WebElementFacade acceptRenew;
 
-    @FindBy(xpath = "/html/body/form[1]/div/div/div[5]/div[2]/table[1]/tbody/tr/td[2]/div/div/select/option[2]")
+    @FindBy(xpath = "/html/body/form[1]/div/div/div[5]/div[2]/table[1]/tbody/tr/td[2]/div/div/select/option[3]")
     WebElementFacade acceptRenew1;
 
     @FindBy(xpath = "//input[contains(@id,'ActivacionesForm:idImsi')]")

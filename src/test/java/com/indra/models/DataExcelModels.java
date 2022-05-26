@@ -32,6 +32,7 @@ public class DataExcelModels{
     String passwordP;
     String port;
 
+    String portSiebel;
     String vendedorPrepago;
     String cedulaClientePrepago;
     String msisdnPrepago;
@@ -297,6 +298,10 @@ public class DataExcelModels{
         return port;
     }
 
+    public String getPortSiebel() {
+        portSiebel = "1525";
+        return portSiebel;
+    }
 //hoja dos data
 
     public String getUrlDBA2() {

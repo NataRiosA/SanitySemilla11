@@ -12,7 +12,7 @@ public class DatabaseConnectionActions extends DataExcelModels {
                 ,"AL_RE_ACTIVADOR", msisdn);
         databaseConnectionEpos(getUrlDBE(), getPort(), getServiceE(),getUserE(),getPasswordE()
                 ,"ali_re_epos_crm_siebel", msi, msisdn);
-        databaseConnectionSiebel(getUrlDBS(), getPort(), getServiceS(),getUserS(),getPasswordS()
+        databaseConnectionSiebel(getUrlDBS(), getPortSiebel(), getServiceS(),getUserS(),getPasswordS()
                 ,"alistamiento_recursos_siebel", msi, msisdn);
         databaseConnectionPostsale(getUrlDBP(), getPort(), getServiceP(),getUserP(),getPasswordP()
                 ,"alistamiento_recursos_postsale", msisdn);

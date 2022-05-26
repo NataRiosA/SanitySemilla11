@@ -32,7 +32,7 @@ public class InventoryAllocationPage extends PageObject {
     @FindBy(xpath = "//select[@id='form1:tipoProd']")
     WebElementFacade tipoProducto;
 
-    @FindBy(xpath = "//div[@id='form1:panelBusqueda_body']/input[@class='boton1']")
+    @FindBy(xpath = "//div[@id='form1:panelBusqueda_body']//input[1]")
     WebElementFacade btnAgregarProductos;
 
     @FindBy(xpath ="//input[@id='form1:selectArticuloscomboboxField']")
