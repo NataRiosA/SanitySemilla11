@@ -37,6 +37,7 @@ public class ControlActivationActions extends ControlActivationPage {
         enter(cliente).into(getDocumentCC());
         enter("2000").into(getDocumentExpedicion());
         getBtnContinue().click();
+        waitABit(20000);
     }
 
     public void activationInformation(String msisdn,String imsi) throws InterruptedException {
