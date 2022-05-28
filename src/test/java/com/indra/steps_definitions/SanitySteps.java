@@ -48,7 +48,7 @@ public class SanitySteps{
 //-----------<Primer escenario>----------------
     @Given("^Se ejecutan procedimientos en bd y soapUi$")
     public void seEjecutanProcedimientosEnBdYSoapUi() throws SQLException {
-        enlistment.executeAllProcedures();
+        //enlistment.executeAllProcedures();
     }
 
     @When("^Se ingresa a la plataforma epos para cargue de inventario$")
@@ -64,9 +64,10 @@ public class SanitySteps{
 
     @Then("^Se completa datos para cargar mercancia$")
     public void seCompletaDatosParaCargarMercancia() throws InterruptedException {
-        merchandiseEntryAction.merchandiseEntry();
-        merchandiseEntryAction.merchandiseEntryInventory();
-        Thread.sleep(2000);
+        //merchandiseEntryAction.merchandiseEntry();
+        //merchandiseEntryAction.merchandiseEntryInventory();
+        Thread.sleep(3000);
+        loginPageAction.leave();
     }
 
     //-----------<Segundo escenario>----------------
