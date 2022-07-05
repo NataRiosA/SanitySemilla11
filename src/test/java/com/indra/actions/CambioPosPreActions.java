@@ -13,6 +13,11 @@ public class CambioPosPreActions extends CambioPosPrePage {
         super(driver);
     }
 
+    public void waitUntilExecuteChange( int time){
+        System.out.println("se esperara un total de "+time+ " milisegundos");
+        waitABit(time);
+    }
+
     public void initialRute(){
         postSaleClick();
         transactionClick();
@@ -28,6 +33,7 @@ public class CambioPosPreActions extends CambioPosPrePage {
         waitABit(2000);
         getMotivo().click();
         getMotivo1().click();
+        getReasonCause().waitUntilEnabled();
         getReasonCause().click();
         getReasonCause1().click();
         getDetail().click();

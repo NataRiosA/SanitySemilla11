@@ -80,7 +80,7 @@ public class ControlActivationPage extends PageObject{
     @FindBy(xpath = "//input[contains(@id,'ActivacionesForm:btnContinuarActivacionVenta')]")
     WebElementFacade continuee;
 
-    @FindBy(xpath = "//input[contains(@id,'ActivacionesForm:idBarrio')]")
+    @FindBy(id = "ActivacionesForm:idBarrio")//@FindBy(xpath = "//input[contains(@id,'ActivacionesForm:idBarrio')]")
     WebElementFacade district;
 
     @FindBy(xpath = "(//span[contains(@class,'rf-sel-btn-arrow')])[4]")

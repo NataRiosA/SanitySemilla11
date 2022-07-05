@@ -10,10 +10,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/execute.feature"
         ,glue = "com.indra.steps_definitions"
         ,snippets = SnippetType.CAMELCASE
-        //,tags="@portalNintendo"
-)//epos or @inventory or @windex
+        ,tags="@PosPayPortability"//"@portalPrepaid or @portalNintendo"//"@epos or @inventory or @windex"
+)//@epos or @inventory or @windex
 
 
 public class SanityRunners {
 }
+
 

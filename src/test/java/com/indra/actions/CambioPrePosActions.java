@@ -38,12 +38,16 @@ public class CambioPrePosActions extends CambioPrePosPage {
         writeVendorNumber();
         waitABit(2000);
         getClic().click();
-        writeNumber();
-        writeMail();
-        writeDirection();
+        waitABit(3000);
+
         directionClick();
         getFactura().click();
         getFacturaReducida().click();
+
+        writeNumber();
+        writeMail();
+        writeDirection();
+
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("window.scrollBy(0,820)");
         selectPlan();
@@ -90,11 +94,16 @@ public class CambioPrePosActions extends CambioPrePosPage {
     }
 
     public void writeNumber(){
+        getMsisdn().waitUntilVisible();
+        getMsisdn().waitUntilEnabled();
+        getMsisdn().waitUntilClickable();
+        WebElement caja = getDriver().findElement(By.id("PlanschangeForm:InfoTelefono:clientInfoTelefono"));
+        caja.sendKeys("hola");
         enter("3104099142").into(getMsisdn());
     }
 
     public void writeReasonForChange(){
-        enter("Prueba Cesion Automatizada QA").into(getReasonChange());
+        enter("Prueba Cambio Pre a Pos Automatizada QA").into(getReasonChange());
     }
 
     public void writeMail(){
@@ -106,6 +115,8 @@ public class CambioPrePosActions extends CambioPrePosPage {
     }
 
     public void directionClick(){
+        getDeparment().waitUntilEnabled();
+        getDeparment().waitUntilClickable();
         getDeparment().click();
         getDeparment1().click();
         waitABit(5000);

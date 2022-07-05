@@ -33,7 +33,7 @@ public class CambioPrePosPage extends PageObject {
     @FindBy(xpath = "//*[@id='PlanschangeForm:userField:user']")
     WebElementFacade vendedor;
 
-    @FindBy(xpath = "//*[@id='PlanschangeForm:InfoTelefono:clientInfoTelefono']")
+    @FindBy(id = "PlanschangeForm:InfoTelefono:clientInfoTelefono")//@FindBy(xpath = "//*[@id='PlanschangeForm:InfoTelefono:clientInfoTelefono']")
     WebElementFacade msisdn;
 
     @FindBy(xpath = "//*[@id='PlanschangeForm:clientInfoMail:clientInfoMail']")
@@ -64,7 +64,7 @@ public class CambioPrePosPage extends PageObject {
     @FindBy(xpath = "//*[@id='PlanschangeForm:bntPlanChange']")
     WebElementFacade btnChangePlan;
 
-    @FindBy(xpath = "/html/body/div[1]/form/table/tbody/tr[2]/td/span[1]/ul")
+    @FindBy(xpath = "/html/body/div[1]/form/table/tbody/tr[2]/td/span[1]/ul")//"/html/body/div[1]/form/table/tbody/tr[2]/td/span[1]/ul")
     WebElementFacade mensajes;
 
     @FindBy(xpath = "//*[@id='PlanschangeForm:InfoAnnualRenewal:decisionField']")

@@ -64,6 +64,7 @@ public class ControlActivationActions extends ControlActivationPage {
     }
 
     public  void demographicInformation(){
+        getDistrict().waitUntilVisible();
         enter("Salazar londonio").into(getDistrict());
         getDropdownDeparment().click();
         getDeparment().click();

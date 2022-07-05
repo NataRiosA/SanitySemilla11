@@ -57,6 +57,7 @@ public class AvangerActivationActions extends ControlActivationPage {
         waitABit(500);
         WebElement continuar = getDriver().findElement(By.name("ActivacionesForm:btnContinuarActivacionVenta"));
         continuar.click();
+        waitABit(5000);
     }
 
     public  void demographicInformation(){

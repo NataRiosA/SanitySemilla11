@@ -184,6 +184,7 @@ public class SanitySteps{
 
     @Then("^Se deberia ver en pantalla unica la linea en plan pos$")
     public void seDeberiaVerEnPantallaUnicaLaLineaEnPlanPos() {
+        cambioPosPreActions.waitUntilExecuteChange(60000);
         prepaidActivationActions.consultSingleScreen(dataExcelModels.getMsisdnPostpago());
     }
 
