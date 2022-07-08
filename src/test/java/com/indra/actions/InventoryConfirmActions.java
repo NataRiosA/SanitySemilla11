@@ -59,7 +59,7 @@ public class InventoryConfirmActions extends DataExcelModels {
 
         Thread.sleep(3000);
 
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 8; i++) {
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
             Thread.sleep(500);

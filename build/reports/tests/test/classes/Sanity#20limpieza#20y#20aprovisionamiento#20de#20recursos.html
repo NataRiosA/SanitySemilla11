@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">3</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">23.779s</div>
+<div class="counter">2m52.45s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,8 +81,18 @@
 </tr>
 </thead>
 <tr>
+<td class="success">realizar el cargue de inventario</td>
+<td class="success">42.321s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">realizar la confirmacion de inventario</td>
+<td class="success">21.277s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">se quiere ingresar a la plataforma epos</td>
-<td class="success">23.779s</td>
+<td class="success">1m48.85s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,20 +100,461 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:42:25.753 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-08:42:25.753 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
-08:42:31.652 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
-08:42:31.654 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
-08:42:31.745 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\63694f168e36d6146328aa1c799046950a4537e9d67c87bc68807b754e4488e8.png
-08:42:32.180 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d7225d4beca8b4af4de9c07b3983ba90e05195eaab2618243e24e78c19d7dde1.png
-08:42:37.144 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\f0708f3ae36b7d1d251be556ebeb776d3188b48842074fa401af307a32e9b693.png
-08:42:37.145 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4216036589509828254
-08:42:37.145 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\f0708f3ae36b7d1d251be556ebeb776d3188b48842074fa401af307a32e9b693.png
-08:42:40.239 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\faf7e94c16a030694af3d7419127e25b255103fc5fa2c1cf3d36184d199c8162.png
-08:42:40.240 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1199864157089874055
-08:42:40.241 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\faf7e94c16a030694af3d7419127e25b255103fc5fa2c1cf3d36184d199c8162.png
-08:42:44.153 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\69ba0bd0bbcbb6d1639d7ce70f7bc596ff14ce242a5a20f19f35a7aa28c4e285.png
-08:42:48.431 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+<pre>13:09:41.960 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.14:7001
+13:09:41.966 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.14:7001
+13:09:42.032 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:09:42.034 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:09:42.034 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:09:42.034 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:09:42.034 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:09:42.034 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:09:42.035 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1[\r][\n]&quot;
+13:09:42.035 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+13:09:42.035 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.14:7001[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.14:7001
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+13:09:42.036 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+13:09:42.037 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+13:09:42.037 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3052754293&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+13:09:42.038 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+13:09:42.147 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+13:09:42.149 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 07 Jul 2022 18:15:20 GMT[\r][\n]&quot;
+13:09:42.150 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+13:09:42.150 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+13:09:42.150 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Servlet/2.5 JSP/2.1[\r][\n]&quot;
+13:09:42.150 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:42.151 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:09:42.151 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+13:09:42.151 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 07 Jul 2022 18:15:20 GMT
+13:09:42.151 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+13:09:42.151 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+13:09:42.151 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Servlet/2.5 JSP/2.1
+13:09:42.154 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:09:42.169 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+13:09:42.170 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:09:42.216 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0347[\r][\n]&quot;
+13:09:42.216 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Header&gt;&lt;work:WorkContext xmlns:work=&quot;http://oracle.com/weblogic/soap/workarea/&quot;&gt;rO0ABXdOABx3ZWJsb2dpYy5hcHAuR2F0ZXdheUNic1dTSW50AAAA1gAAACN3ZWJsb2dpYy53b3JrYXJlYS5TdHJpbmdXb3JrQ29udGV4dAABMQAA&lt;/work:WorkContext&gt;&lt;/S:Header&gt;&lt;S:Body&gt;&lt;ns4:queryCustomerInfoResponse xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3052754293 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+13:09:42.217 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:42.217 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+13:09:42.217 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:42.217 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6cb38011
+13:09:42.217 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3052754293 no esta activa
+se ejecuta correctamente DB Activator
+se ejecuta correctamente  DB EPOS
+se ejecuta correctamente DB Siebel
+se ejecuta correctamente DB Postale
+13:09:50.031 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.14:7001
+13:09:50.031 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.14:7001
+13:09:50.079 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:09:50.079 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:09:50.079 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:09:50.079 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:09:50.079 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:09:50.079 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:09:50.079 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.14:7001[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.14:7001
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+13:09:50.080 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3052754289&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+13:09:50.082 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+13:09:50.083 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+13:09:50.083 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+13:09:50.083 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+13:09:50.083 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+13:09:50.162 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+13:09:50.163 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 07 Jul 2022 18:15:28 GMT[\r][\n]&quot;
+13:09:50.163 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+13:09:50.163 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+13:09:50.163 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Servlet/2.5 JSP/2.1[\r][\n]&quot;
+13:09:50.163 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:50.163 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:09:50.163 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+13:09:50.163 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 07 Jul 2022 18:15:28 GMT
+13:09:50.163 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+13:09:50.164 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+13:09:50.164 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Servlet/2.5 JSP/2.1
+13:09:50.164 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:09:50.164 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+13:09:50.164 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:09:50.166 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0347[\r][\n]&quot;
+13:09:50.166 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Header&gt;&lt;work:WorkContext xmlns:work=&quot;http://oracle.com/weblogic/soap/workarea/&quot;&gt;rO0ABXdOABx3ZWJsb2dpYy5hcHAuR2F0ZXdheUNic1dTSW50AAAA1gAAACN3ZWJsb2dpYy53b3JrYXJlYS5TdHJpbmdXb3JrQ29udGV4dAABMQAA&lt;/work:WorkContext&gt;&lt;/S:Header&gt;&lt;S:Body&gt;&lt;ns4:queryCustomerInfoResponse xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3052754289 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+13:09:50.166 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:50.166 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+13:09:50.166 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:50.167 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@e10517
+13:09:50.167 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3052754289 no esta activa
+13:09:50.206 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:59463&lt;-&gt;10.65.45.14:7001 closed
+13:09:50.218 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:59456&lt;-&gt;10.65.45.14:7001 closed
+se ejecuta correctamente DB Activator
+se ejecuta correctamente  DB EPOS
+se ejecuta correctamente DB Siebel
+se ejecuta correctamente DB Postale
+13:09:56.464 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.14:7001
+13:09:56.464 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.14:7001
+13:09:56.510 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:09:56.511 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:09:56.511 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:09:56.511 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:09:56.511 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:09:56.511 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.14:7001[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+13:09:56.511 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:09:56.511 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+13:09:56.511 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+13:09:56.511 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+13:09:56.511 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.14:7001
+13:09:56.511 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+13:09:56.512 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+13:09:56.512 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+13:09:56.512 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+13:09:56.512 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+13:09:56.512 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3052754293&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+13:09:56.513 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 07 Jul 2022 18:15:34 GMT[\r][\n]&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Servlet/2.5 JSP/2.1[\r][\n]&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:56.586 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:09:56.586 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+13:09:56.586 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 07 Jul 2022 18:15:34 GMT
+13:09:56.586 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+13:09:56.586 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+13:09:56.586 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Servlet/2.5 JSP/2.1
+13:09:56.587 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:09:56.587 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+13:09:56.587 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:09:56.588 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0347[\r][\n]&quot;
+13:09:56.589 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Header&gt;&lt;work:WorkContext xmlns:work=&quot;http://oracle.com/weblogic/soap/workarea/&quot;&gt;rO0ABXdOABx3ZWJsb2dpYy5hcHAuR2F0ZXdheUNic1dTSW50AAAA1gAAACN3ZWJsb2dpYy53b3JrYXJlYS5TdHJpbmdXb3JrQ29udGV4dAABMQAA&lt;/work:WorkContext&gt;&lt;/S:Header&gt;&lt;S:Body&gt;&lt;ns4:queryCustomerInfoResponse xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3052754293 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+13:09:56.589 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:56.589 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+13:09:56.589 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:09:56.589 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6e8bfe66
+13:09:56.589 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3052754293 no esta activa
+se ejecuta correctamente DB Activator
+se ejecuta correctamente  DB EPOS
+se ejecuta correctamente DB Siebel
+se ejecuta correctamente DB Postale
+13:10:00.431 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.14:7001
+13:10:00.431 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.14:7001
+13:10:00.478 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:10:00.478 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:10:00.478 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:10:00.478 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:10:00.478 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:10:00.478 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:10:00.478 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1[\r][\n]&quot;
+13:10:00.478 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+13:10:00.478 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+13:10:00.478 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+13:10:00.478 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.14:7001[\r][\n]&quot;
+13:10:00.478 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+13:10:00.479 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]&quot;
+13:10:00.479 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+13:10:00.479 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.14:7001
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+13:10:00.479 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3045987650&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+13:10:00.480 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+13:10:00.555 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+13:10:00.556 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 07 Jul 2022 18:15:38 GMT[\r][\n]&quot;
+13:10:00.556 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+13:10:00.556 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+13:10:00.556 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Servlet/2.5 JSP/2.1[\r][\n]&quot;
+13:10:00.556 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:00.556 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:10:00.556 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+13:10:00.556 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 07 Jul 2022 18:15:38 GMT
+13:10:00.556 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+13:10:00.556 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+13:10:00.556 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Servlet/2.5 JSP/2.1
+13:10:00.557 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:10:00.557 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+13:10:00.557 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:10:00.559 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0347[\r][\n]&quot;
+13:10:00.559 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Header&gt;&lt;work:WorkContext xmlns:work=&quot;http://oracle.com/weblogic/soap/workarea/&quot;&gt;rO0ABXdOABx3ZWJsb2dpYy5hcHAuR2F0ZXdheUNic1dTSW50AAAA1gAAACN3ZWJsb2dpYy53b3JrYXJlYS5TdHJpbmdXb3JrQ29udGV4dAABMQAA&lt;/work:WorkContext&gt;&lt;/S:Header&gt;&lt;S:Body&gt;&lt;ns4:queryCustomerInfoResponse xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3045987650 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+13:10:00.559 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:00.559 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+13:10:00.559 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:00.559 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2c66c1c4
+13:10:00.559 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3045987650 no esta activa
+se ejecuta correctamente DB Activator
+13:10:01.274 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:59478&lt;-&gt;10.65.45.14:7001 closed
+13:10:01.282 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:59468&lt;-&gt;10.65.45.14:7001 closed
+se ejecuta correctamente  DB EPOS
+se ejecuta correctamente DB Siebel
+se ejecuta correctamente DB Postale
+13:10:04.199 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.14:7001
+13:10:04.199 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.14:7001
+13:10:04.248 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:10:04.248 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:10:04.248 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:10:04.248 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:10:04.248 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:10:04.248 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:10:04.248 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1[\r][\n]&quot;
+13:10:04.248 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+13:10:04.248 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+13:10:04.248 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.14:7001[\r][\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.14:7001
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+13:10:04.249 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3046010569&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+13:10:04.249 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+13:10:04.250 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+13:10:04.250 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+13:10:04.250 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+13:10:04.250 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+13:10:04.250 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+13:10:04.329 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+13:10:04.329 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 07 Jul 2022 18:15:42 GMT[\r][\n]&quot;
+13:10:04.329 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+13:10:04.329 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+13:10:04.329 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Servlet/2.5 JSP/2.1[\r][\n]&quot;
+13:10:04.330 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:04.330 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:10:04.330 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+13:10:04.330 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 07 Jul 2022 18:15:42 GMT
+13:10:04.330 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+13:10:04.330 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+13:10:04.330 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Servlet/2.5 JSP/2.1
+13:10:04.330 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:10:04.330 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+13:10:04.331 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:10:04.332 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0347[\r][\n]&quot;
+13:10:04.332 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Header&gt;&lt;work:WorkContext xmlns:work=&quot;http://oracle.com/weblogic/soap/workarea/&quot;&gt;rO0ABXdOABx3ZWJsb2dpYy5hcHAuR2F0ZXdheUNic1dTSW50AAAA1gAAACN3ZWJsb2dpYy53b3JrYXJlYS5TdHJpbmdXb3JrQ29udGV4dAABMQAA&lt;/work:WorkContext&gt;&lt;/S:Header&gt;&lt;S:Body&gt;&lt;ns4:queryCustomerInfoResponse xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3046010569 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+13:10:04.332 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:04.332 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+13:10:04.332 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:04.332 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@375e5f83
+13:10:04.332 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3046010569 no esta activa
+se ejecuta correctamente DB Activator
+se ejecuta correctamente  DB EPOS
+se ejecuta correctamente DB Siebel
+se ejecuta correctamente DB Postale
+13:10:07.922 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.14:7001
+13:10:07.922 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.14:7001
+13:10:07.976 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:10:07.976 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:10:07.976 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:10:07.976 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:10:07.976 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:10:07.976 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.14:7001[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt?WSDL HTTP/1.1
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.14:7001
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+13:10:07.977 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3046010523&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+13:10:07.978 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+13:10:08.051 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+13:10:08.052 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 07 Jul 2022 18:15:46 GMT[\r][\n]&quot;
+13:10:08.052 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+13:10:08.052 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+13:10:08.052 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;X-Powered-By: Servlet/2.5 JSP/2.1[\r][\n]&quot;
+13:10:08.052 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:08.052 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+13:10:08.052 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+13:10:08.052 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 07 Jul 2022 18:15:46 GMT
+13:10:08.052 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+13:10:08.052 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+13:10:08.052 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; X-Powered-By: Servlet/2.5 JSP/2.1
+13:10:08.052 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:10:08.053 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+13:10:08.053 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:10:08.054 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0347[\r][\n]&quot;
+13:10:08.054 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Header&gt;&lt;work:WorkContext xmlns:work=&quot;http://oracle.com/weblogic/soap/workarea/&quot;&gt;rO0ABXdOABx3ZWJsb2dpYy5hcHAuR2F0ZXdheUNic1dTSW50AAAA1gAAACN3ZWJsb2dpYy53b3JrYXJlYS5TdHJpbmdXb3JrQ29udGV4dAABMQAA&lt;/work:WorkContext&gt;&lt;/S:Header&gt;&lt;S:Body&gt;&lt;ns4:queryCustomerInfoResponse xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3046010523 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+13:10:08.054 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:08.054 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+13:10:08.054 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+13:10:08.054 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@a100235
+13:10:08.054 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3046010523 no esta activa
+se ejecuta correctamente DB Activator
+se ejecuta correctamente  DB EPOS
+13:10:10.453 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:59489&lt;-&gt;10.65.45.14:7001 closed
+13:10:10.456 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:59484&lt;-&gt;10.65.45.14:7001 closed
+se ejecuta correctamente DB Siebel
+se ejecuta correctamente DB Postale
+13:10:12.084 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+13:10:12.084 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
+13:10:18.134 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+13:10:18.135 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+13:10:18.258 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\63694f168e36d6146328aa1c799046950a4537e9d67c87bc68807b754e4488e8.png
+13:10:18.633 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d7225d4beca8b4af4de9c07b3983ba90e05195eaab2618243e24e78c19d7dde1.png
+13:10:21.817 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\9bbca96785ce7c817386c99d3fa785471c337df8ab7888f237eeac1a42d1ff73.png
+13:10:21.820 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-8749771623252192238
+13:10:21.820 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\9bbca96785ce7c817386c99d3fa785471c337df8ab7888f237eeac1a42d1ff73.png
+13:10:23.930 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\15cb0e9b2029aea4fe31c7588cfc1921a8a9a6b73dcaccbb6d4f9df7d64d1b52.png
+13:10:23.932 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4041737051057301131
+13:10:23.932 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\15cb0e9b2029aea4fe31c7588cfc1921a8a9a6b73dcaccbb6d4f9df7d64d1b52.png
+13:10:24.682 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\b65c54a68df6218897633d1c0138ecc16c71c81219ee9d57114c69577e034359.png
+13:10:24.684 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-462014563285827727
+13:10:24.684 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\b65c54a68df6218897633d1c0138ecc16c71c81219ee9d57114c69577e034359.png
+13:10:25.811 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\310230c57dafad59904fa327ea04940d6916b9e7c20311093df55fe719b4bc77.png
+13:10:25.814 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2510571412942240427
+13:10:25.814 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\310230c57dafad59904fa327ea04940d6916b9e7c20311093df55fe719b4bc77.png
+13:10:26.752 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\0246379f712ba8bd8fe414b098f8a1862c9fb61dc240eb571f6370c2b2032db0.png
+13:10:26.755 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3726522544218607629
+13:10:26.755 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\0246379f712ba8bd8fe414b098f8a1862c9fb61dc240eb571f6370c2b2032db0.png
+13:10:27.747 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\7558fb3c840efa50995f00c87c3b26976ac4c189b593c009d5816d2fde682710.png
+13:10:27.750 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-843410461297182752
+13:10:27.750 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\7558fb3c840efa50995f00c87c3b26976ac4c189b593c009d5816d2fde682710.png
+13:10:30.566 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d343f2fd30847202f8986398adca19853f76821f174af1225551303e5832ee40.png
+13:10:30.568 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-8919091898612421265
+13:10:30.568 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d343f2fd30847202f8986398adca19853f76821f174af1225551303e5832ee40.png
+13:10:31.266 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\7d20fef48506ed8f2259d24aa4d03110f89cd3a157ffec7db3c267f1e243f6de.png
+13:10:31.268 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6583837640418907149
+13:10:31.268 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\7d20fef48506ed8f2259d24aa4d03110f89cd3a157ffec7db3c267f1e243f6de.png
+13:10:33.968 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\83dd07b8500fc7fd035fe4edcea7bed8c2a078bde067e09da299a4c3cd7ac594.png
+13:10:33.971 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-7709866021756771324
+13:10:33.971 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\83dd07b8500fc7fd035fe4edcea7bed8c2a078bde067e09da299a4c3cd7ac594.png
+13:11:23.141 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\69ba0bd0bbcbb6d1639d7ce70f7bc596ff14ce242a5a20f19f35a7aa28c4e285.png
+13:11:28.624 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -113,36 +564,128 @@
 
 TEST PASSED: se quiere ingresar a la plataforma epos
 ----------------------------------------------------------------------------?[0m
+13:11:28.863 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+13:11:28.863 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
+13:11:34.811 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\63694f168e36d6146328aa1c799046950a4537e9d67c87bc68807b754e4488e8.png
+13:11:35.150 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d7225d4beca8b4af4de9c07b3983ba90e05195eaab2618243e24e78c19d7dde1.png
+13:11:38.201 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d9f5ab0c6858e053064683877401e89551999c366972d6cfa2fcea826815e868.png
+13:11:38.204 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-949596332521188999
+13:11:38.204 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\d9f5ab0c6858e053064683877401e89551999c366972d6cfa2fcea826815e868.png
+13:11:41.315 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\fb59077629b7ac2b96da161269e41bbf6f1b67b5a319bb82d2fc416024b80aad.png
+13:11:41.317 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2899663293139696695
+13:11:41.317 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\fb59077629b7ac2b96da161269e41bbf6f1b67b5a319bb82d2fc416024b80aad.png
+13:11:44.102 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\12caba52f603c74364e8db31a98251d239ea13abede9e55ca011acff518f8a70.png
+13:11:44.104 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2731788778391022252
+13:11:44.104 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\12caba52f603c74364e8db31a98251d239ea13abede9e55ca011acff518f8a70.png
+13:11:48.024 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\cf0ea20d7bcd20e6320ed0c1e4d71d39a2d9fc4f9541b6424e3868ac5a668115.png
+13:11:48.025 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4206772041789331368
+13:11:48.025 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\cf0ea20d7bcd20e6320ed0c1e4d71d39a2d9fc4f9541b6424e3868ac5a668115.png
+13:11:51.204 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\07367f98afcfd835e3c600b296bddb4f6ea383bcd770c4bfd1339982fb1b71e9.png
+13:11:51.207 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2886832420449029496
+13:11:51.207 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\07367f98afcfd835e3c600b296bddb4f6ea383bcd770c4bfd1339982fb1b71e9.png
+13:11:52.095 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\ee1732cffb3cce61631e613dad81a80902c7bf73eac4ffb57483fa8a09f41702.png
+13:11:52.098 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-5407200933439645829
+13:11:52.098 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\ee1732cffb3cce61631e613dad81a80902c7bf73eac4ffb57483fa8a09f41702.png
+13:11:53.723 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\2f106f1808024a5ea4637f789c09ff5d6bd2f5ca93dd60dd045d63f1a3035ffa.png
+13:11:53.725 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3005430322578519670
+13:11:53.725 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\2f106f1808024a5ea4637f789c09ff5d6bd2f5ca93dd60dd045d63f1a3035ffa.png
+13:11:54.699 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\2a358073f7dc95635101ce569135fd972663d33b263d68229138cdee076db3eb.png
+13:11:58.420 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\1d7cae477bf91f4473d4b29d5e2c56379617e55816cc8bd615c5d6b068b15d9f.png
+13:11:58.424 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6177357697810456378
+13:11:58.424 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\1d7cae477bf91f4473d4b29d5e2c56379617e55816cc8bd615c5d6b068b15d9f.png
+13:11:59.157 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\353f03b80e9501f2e5b141485e488f6adb28d5cdfde5cb8971eb8bba8f6c361b.png
+13:11:59.160 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1777098122694535378
+13:11:59.161 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\353f03b80e9501f2e5b141485e488f6adb28d5cdfde5cb8971eb8bba8f6c361b.png
+13:12:02.925 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla11\target\site\serenity\69ba0bd0bbcbb6d1639d7ce70f7bc596ff14ce242a5a20f19f35a7aa28c4e285.png
+13:12:10.950 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: realizar el cargue de inventario
+----------------------------------------------------------------------------?[0m
+13:12:32.240 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: realizar la confirmacion de inventario
+----------------------------------------------------------------------------?[0m
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>may 28, 2022 8:42:25 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+<pre>jul 07, 2022 1:10:11 PM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-may 28, 2022 8:42:25 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+jul 07, 2022 1:10:11 PM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-1653745346426	geckodriver	INFO	Listening on 127.0.0.1:45016
-1653745347055	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\nriosa\\AppData\\Local\\Temp\\rust_mozprofilevA0V42&quot;
-1653745347988	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1653745348015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1653745348015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1653745348015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1653745348015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1657217412464	geckodriver	INFO	Listening on 127.0.0.1:34121
+1657217413131	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\nriosa\\AppData\\Local\\Temp\\rust_mozprofileMeLYRH&quot;
+1657217414233	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1657217414339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1657217414339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1657217414339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1657217414339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1653745350001	Marionette	INFO	Listening on port 60025
-1653745350306	Marionette	WARN	TLS certificate errors will be ignored for this session
-may 28, 2022 8:42:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+1657217416759	Marionette	INFO	Listening on port 59496
+1657217416866	Marionette	WARN	TLS certificate errors will be ignored for this session
+jul 07, 2022 1:10:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-1653745364356	Marionette	INFO	Stopped listening on port 60025
-Extension error: [Exception... &quot;Component not initialized&quot;  nsresult: &quot;0xc1f30001 (NS_ERROR_NOT_INITIALIZED)&quot;  location: &quot;JS frame :: moz-extension://909e6c55-58fc-48f2-98e6-6d57ad04c4f5/main.js :: connect :: line 12034&quot;  data: no] undefined 12034
+1657217417074	addons.xpi	ERROR	Failed to move file C:\Users\nriosa\AppData\Local\Temp\rust_mozprofileMeLYRH\extensions\staged\firefoxhpwolfsecurityextension@bromium.com.xpi to C:\Users\nriosa\AppData\Local\Temp\rust_mozprofileMeLYRH\extensions: [Exception... &quot;Component returned failure code: 0x8052000e (NS_ERROR_FILE_IS_LOCKED) [nsIFile.moveTo]&quot;  nsresult: &quot;0x8052000e (NS_ERROR_FILE_IS_LOCKED)&quot;  location: &quot;JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: _installFile :: line 1092&quot;  data: no] Stack trace: _installFile()@resource://gre/modules/addons/XPIInstall.jsm:1092
+moveUnder()@resource://gre/modules/addons/XPIInstall.jsm:1121
+installAddon()@resource://gre/modules/addons/XPIInstall.jsm:3210
+install()@resource://gre/modules/addons/XPIInstall.jsm:1767
+startInstall/this._startupPromise&lt;()@resource://gre/modules/addons/XPIInstall.jsm:1833
+startInstall()@resource://gre/modules/addons/XPIInstall.jsm:1839
+1657217417078	addons.xpi	WARN	Failed to install C:\Users\nriosa\AppData\Local\Temp\tmp-jgy.xpi from https://addons.bromium-online.com/wsx.xpi to C:\Users\nriosa\AppData\Local\Temp\rust_mozprofileMeLYRH\extensions\staged\firefoxhpwolfsecurityextension@bromium.com.xpi: [Exception... &quot;Component returned failure code: 0x8052000e (NS_ERROR_FILE_IS_LOCKED) [nsIFile.moveTo]&quot;  nsresult: &quot;0x8052000e (NS_ERROR_FILE_IS_LOCKED)&quot;  location: &quot;JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: _installFile :: line 1092&quot;  data: no] Stack trace: _installFile()@resource://gre/modules/addons/XPIInstall.jsm:1092
+moveUnder()@resource://gre/modules/addons/XPIInstall.jsm:1121
+installAddon()@resource://gre/modules/addons/XPIInstall.jsm:3210
+install()@resource://gre/modules/addons/XPIInstall.jsm:1767
+startInstall/this._startupPromise&lt;()@resource://gre/modules/addons/XPIInstall.jsm:1833
+startInstall()@resource://gre/modules/addons/XPIInstall.jsm:1839
+console.error: Policies.jsm: 
+  Installation failed - ERROR_FILE_ACCESS - {url}
+1657217483334	Marionette	INFO	Stopped listening on port 59496
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+jul 07, 2022 1:11:28 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+jul 07, 2022 1:11:28 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+1657217489111	geckodriver	INFO	Listening on 127.0.0.1:27211
+1657217489581	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\nriosa\\AppData\\Local\\Temp\\rust_mozprofileP2VIqi&quot;
+1657217490775	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1657217490806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1657217490806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1657217490806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1657217490806	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1657217493284	Marionette	INFO	Listening on port 59536
+1657217493311	Marionette	WARN	TLS certificate errors will be ignored for this session
+jul 07, 2022 1:11:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+JavaScript error: http://10.65.50.9:8180/tigo-pos-web-ii/a4j_3_2_0.SR1-SNAPSHOTorg/ajax4jsf/javascript/scripts/form.js.jsf, line 11: TypeError: element is null
+JavaScript error: http://10.65.50.9:8180/tigo-pos-web-ii/a4j_3_2_0.SR1-SNAPSHOTorg/ajax4jsf/javascript/scripts/form.js.jsf, line 11: TypeError: element is null
+1657217523178	Marionette	INFO	Stopped listening on port 59536
+Extension error: [Exception... &quot;Component not initialized&quot;  nsresult: &quot;0xc1f30001 (NS_ERROR_NOT_INITIALIZED)&quot;  location: &quot;JS frame :: moz-extension://2814f78e-f906-4675-b556-7f39238f5f15/main.js :: connect :: line 12034&quot;  data: no] undefined 12034
 [[Exception stack
-connect@moz-extension://909e6c55-58fc-48f2-98e6-6d57ad04c4f5/main.js:12034:23
-onPortDisconnected@moz-extension://909e6c55-58fc-48f2-98e6-6d57ad04c4f5/main.js:20120:30
-makeConnection/channel&lt;@moz-extension://909e6c55-58fc-48f2-98e6-6d57ad04c4f5/main.js:20093:136
-handleDisconnect@moz-extension://909e6c55-58fc-48f2-98e6-6d57ad04c4f5/main.js:12138:14
-connect/&lt;/&lt;@moz-extension://909e6c55-58fc-48f2-98e6-6d57ad04c4f5/main.js:12020:63
+connect@moz-extension://2814f78e-f906-4675-b556-7f39238f5f15/main.js:12034:23
+onPortDisconnected@moz-extension://2814f78e-f906-4675-b556-7f39238f5f15/main.js:20120:30
+makeConnection/channel&lt;@moz-extension://2814f78e-f906-4675-b556-7f39238f5f15/main.js:20093:136
+handleDisconnect@moz-extension://2814f78e-f906-4675-b556-7f39238f5f15/main.js:12138:14
+connect/&lt;/&lt;@moz-extension://2814f78e-f906-4675-b556-7f39238f5f15/main.js:12020:63
 Current stack
 applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:606:13
 addListener/asyncWithoutClone/&lt;@resource://gre/modules/ExtensionCommon.jsm:2443:39
@@ -173,7 +716,7 @@ addListener/asyncWithoutClone/&lt;@resource://gre/modules/ExtensionCommon.jsm:24
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 28/05/2022 08:42:49 AM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 7/07/2022 01:12:33 PM</p>
 </div>
 </div>
 </body>
