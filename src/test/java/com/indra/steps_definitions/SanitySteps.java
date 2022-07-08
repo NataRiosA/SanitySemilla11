@@ -48,7 +48,8 @@ public class SanitySteps{
     CesionNitaNitActions cesionNit = new CesionNitaNitActions(driver);
 
     ControlActivationNitActions controlActivationNitActions = new ControlActivationNitActions(driver);
-//-----------<Primer escenario>----------------
+
+    //-----------<Primer escenario>----------------
     @Given("^Se ejecutan procedimientos en bd y soapUi$")
     public void seEjecutanProcedimientosEnBdYSoapUi() throws SQLException {
         enlistment.executeAllProcedures();
