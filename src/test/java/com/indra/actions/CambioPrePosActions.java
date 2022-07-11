@@ -130,7 +130,7 @@ public class CambioPrePosActions extends CambioPrePosPage {
 
     public void selectPlan(){
         Select dropDownPlan= new Select(getDriver().findElement(By.xpath("//*[@id='PlanschangeForm:planField:planField']")));
-        dropDownPlan.selectByValue("1210");
+        dropDownPlan.selectByValue("1208");
     }
 
     public void renovar(){

@@ -46,10 +46,10 @@ public class PortabilityPostActivationPage extends PageObject{
     @FindBy (xpath = "/html/body/div[2]/div[2]/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div[1]/div[2]/div/div/ul/li[1]/span/a")
     WebElementFacade preventa;
 
-    @FindBy (xpath = "//*[@id='pbGac4fa497_2d8304_2d4e12_2d8e75_2d0ee02636d5e8:_viewRoot:j_id4:j_id10:j_id11:117::j_id12:handle:img:collapsed']")
+    @FindBy (xpath = "//*[@id='pbGac4fa497_2d8304_2d4e12_2d8e75_2d0ee02636d5e8:_viewRoot:j_id4:j_id10:j_id11:114::j_id12:handle:img:collapsed']")
     WebElementFacade portabilidadNumerica;
 
-    @FindBy (xpath = "//*[@id='pbGac4fa497_2d8304_2d4e12_2d8e75_2d0ee02636d5e8:_viewRoot:j_id4:j_id10:j_id11:117:118::j_id14:handle:img:collapsed']")
+    @FindBy (xpath = "//*[@id='pbGac4fa497_2d8304_2d4e12_2d8e75_2d0ee02636d5e8:_viewRoot:j_id4:j_id10:j_id11:114:115::j_id14:handle:img:collapsed']")
     WebElementFacade solicitudes;
 
     @FindBy (xpath = "(//a[@href='#'][contains(@id,'id17')][contains(.,'Solicitud de NIP')])[1]")

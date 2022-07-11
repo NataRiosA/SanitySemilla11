@@ -53,7 +53,7 @@ public class MerchandiseEntryAction extends MerchandiseEntryPage {
         getBulkUploadItems().click();
         Actions actions = new Actions(getDriver());
         WebElement we = getDriver().findElement(By.xpath("//input[contains(@id,'formload:uploadFile:file')]"));
-        we.sendKeys("C:\\SanitySemilla11\\src\\test\\resources\\config_data\\Mercanncia.csv");
+        we.sendKeys("C:\\SanitySemilla11 - copia\\src\\test\\resources\\config_data\\Mercanncia.csv");
         //actions.moveToElement(we).build().perform();
         getUploadFile2().click();
         //compareM();

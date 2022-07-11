@@ -107,7 +107,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
         //getValidate().click();
         enter("3222345678").into(getPhone());
         getContinueActivationDemo().click();
-        waitABit(10000);
+        waitABit(15000);
         WebElement confirm2 = getDriver().findElement(By.xpath("//input[contains(@id,'popupConfirmacionDatos:confirmarDatos')]"));
         confirm2.click();
         //getConfirm().click();
@@ -400,7 +400,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
         waitABit(1000);
         js.executeScript("window.scrollBy(0,820)");
 
-        WebElement hrl = getDriver().findElement(By.id("j_id393:j_id397"));
+        WebElement hrl = getDriver().findElement(By.xpath("//div[@class='icePnlClpsblCnt']//textarea[1]"));
         MatcherAssert.assertThat("el hrl es ",
                 hrl.getText(),Matchers.containsString("Operation is successful") );
     }

@@ -15,7 +15,7 @@ public class DatabasePortInActions extends DataExcelModels {
     }
 
     public void cleanLinesMsi(String msi) throws SQLException {
-        cleanLineMsi(getUrlDBS(), getPort(), getServiceS(), getUserS(), getPasswordS()
+        cleanLineMsi(getUrlDBS(), getPortSiebel(), getServiceS(), getUserS(), getPasswordS()
                 , msi);
     }
 

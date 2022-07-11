@@ -99,7 +99,3 @@ Feature: Sanity limpieza y aprovisionamiento de recursos
     And se realiza la ejecucion de la shell de portacion
     Then Se deberia ver en pantalla unica la linea en estado activado la linea prepago portada
 
-#    @prueba
-#    Scenario: prueba
-#      Given Se ingresa al portal CRM para activacion
-#      When prueba
