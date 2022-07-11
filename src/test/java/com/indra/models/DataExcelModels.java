@@ -6,6 +6,11 @@ public class DataExcelModels{
 
     ReadFileXLSXActions fileXLSX = new ReadFileXLSXActions();
 
+    String clientNit;
+
+    String msisdnNintendoNit;
+    String msiNintendoNit;
+    String CedulaClienteNinNit;
     String urlEpos;
     String urlCRM;
     String urlComfirmador;
@@ -302,6 +307,7 @@ public class DataExcelModels{
         portSiebel = "1525";
         return portSiebel;
     }
+
 //hoja dos data
 
     public String getUrlDBA2() {
@@ -519,5 +525,29 @@ public class DataExcelModels{
         fileXLSX.readFileExcel();
         passwordSSH= fileXLSX.excelArray.get(4).get(6);
         return passwordSSH;
+    }
+
+    public String getMsisdnNintendoNit() {
+        fileXLSX.readFileExcel();
+        msisdnNintendoNit = fileXLSX.excelArray.get(15).get(2);
+        return msisdnNintendoNit;
+    }
+
+    public String getMsiNintendoNit() {
+        fileXLSX.readFileExcel();
+        msiNintendoNit = fileXLSX.excelArray.get(15).get(3);
+        return msiNintendoNit;
+    }
+
+    public String getCedulaClienteNinNit() {
+        fileXLSX.readFileExcel();
+        CedulaClienteNinNit = fileXLSX.excelArray.get(15).get(1);
+        return CedulaClienteNinNit;
+    }
+
+    public String getClientNit() {
+        fileXLSX.readFileExcel();
+        clientNit = fileXLSX.excelArray.get(12).get(4);
+        return clientNit;
     }
 }
